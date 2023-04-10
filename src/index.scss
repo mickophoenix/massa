@@ -6,6 +6,10 @@ html {
 
 .bg-app {
   background-color: #e7c5fd;
+
+  a {
+    color: rgba(155, 1, 254, 1) !important;
+  }
 }
 
 @media (min-width: 768px) {

@@ -1,10 +1,10 @@
-import { createSignal } from "solid-js";
-import AppDescription from "./components/AppDescription";
-import Calculator from "./components/Calculator";
-import UnitsChooser from "./components/calculator/UnitsChooser";
-import { Units } from "./enums/Units";
-import Credits from "./components/calculator/Credits";
-import WhoTable from "./components/calculator/WhoTable";
+import { createSignal } from 'solid-js';
+import AppDescription from './components/AppDescription';
+import Calculator from './components/Calculator';
+import UnitsChooser from './components/calculator/UnitsChooser';
+import { Units } from './enums/Units';
+import Credits from './components/calculator/Credits';
+import WhoTable from './components/calculator/WhoTable';
 
 function App() {
   const [units, setUnits] = createSignal(Units.metric);
@@ -12,7 +12,7 @@ function App() {
   return (
     <div class="container-fluid">
       <div class="row vh-md-100 align-items-center">
-        <div class="col-md-6 h-100 bg-app py-4">
+        <div class="col-md-6 h-100 bg-app overflow-y-auto">
           <div class="row h-100 align-items-center justify-content-end">
             <div class="col-lg-7 py-4">
               <div class="vstack gap-2">
